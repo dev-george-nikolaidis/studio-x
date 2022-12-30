@@ -1,23 +1,59 @@
 import styles from "./hero.module.scss";
-import Phone_img from "../../../../assets/home/desktop/illustration-phone-mockup.svg";
+import { MdEast } from "react-icons/md";
+import { useState } from "react";
+import ButtonBlack from "../../../../components/buttons/ButtonBlack";
 
 const Hero: React.FC = () => {
+	const [currentActive, setCurrentActive] = useState("01");
+
+	let backgroundImage = <div className={`${styles.bgDefault} ${styles.backgroundImage}`}></div>;
+
+	function handlerClick(e: React.MouseEvent<HTMLDivElement>) {
+		setCurrentActive(e.currentTarget.textContent ? e.currentTarget.textContent : "01");
+	}
+
+	switch (currentActive) {
+		case "02":
+			backgroundImage = <div className={`${styles.bg02} ${styles.backgroundImage}`}></div>;
+			break;
+		case "03":
+			backgroundImage = <div className={`${styles.bg03} ${styles.backgroundImage}`}></div>;
+			break;
+		case "04":
+			backgroundImage = <div className={`${styles.bg04} ${styles.backgroundImage}`}></div>;
+			break;
+
+		default:
+			backgroundImage = <div className={`${styles.bgDefault} ${styles.backgroundImage}`}></div>;
+			break;
+	}
 	return (
-		<section className={styles.hero}>
-			<div className={styles.text_context}>
-				<div className={styles.text_container}>
-					<h2 className={styles.hero_title}>Start building with our APIs for absolutely free.</h2>
-					<div className={styles.input_container}>
-						<input type="email" className={styles.input_email} placeholder="Enter email address" />
-						<button className={`${styles.btn_cta_email}  btn`}>Schedule a Demo</button>
-					</div>
-					<p className={styles.question_text}>
-						Have any questions? <span className={styles.contact_text}>Contact Us</span>
-					</p>
+		<div className={styles.hero}>
+			{backgroundImage}
+			{/* hero */}
+			<div className={styles.textContainer}>
+				<h2 className={styles.heroTitle}>Project Paramour</h2>
+				<p className={styles.heroText}>Project made for an art museum near Southwest London. Project Paramour is a statement of bold, modern architecture.</p>
+				<div className={styles.btnWrapper}>
+					<ButtonBlack text="See Our Portfolio" />
 				</div>
 			</div>
-			<div className={styles.image_wrapper}>{<img src={Phone_img} alt="" className={styles.hero_image} />}</div>
-		</section>
+			{/* hero buttons */}
+			<div className={styles.heroButtonsContainer}>
+				<span onClick={handlerClick} className={currentActive === "01" ? `${styles.btnHeroGeneral} ${styles.btnActive}` : `${styles.btnHeroGeneral}`}>
+					01
+				</span>
+				<span onClick={handlerClick} className={currentActive === "02" ? `${styles.btnHeroGeneral} ${styles.btnActive}` : `${styles.btnHeroGeneral}`}>
+					02
+				</span>
+				<span onClick={handlerClick} className={currentActive === "03" ? `${styles.btnHeroGeneral} ${styles.btnActive}` : `${styles.btnHeroGeneral}`}>
+					03
+				</span>
+				<span onClick={handlerClick} className={currentActive === "04" ? `${styles.btnHeroGeneral} ${styles.btnActive}` : `${styles.btnHeroGeneral}`}>
+					04
+				</span>
+			</div>
+		</div>
 	);
 };
 

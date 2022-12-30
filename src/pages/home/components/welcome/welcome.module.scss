@@ -1,0 +1,48 @@
+.wlcSection {
+	grid-column: 2 / 14;
+	display: grid;
+	grid-template-columns: 1fr 35rem;
+	height: 56.8rem;
+	margin-top: 20rem;
+	position: relative;
+	margin-bottom: 20rem;
+}
+
+.wlcTitleOverlay {
+	position: absolute;
+	font-size: var(--fs-1000);
+	font-weight: 700;
+	line-height: 200px;
+	letter-spacing: -5px;
+	color: var(--clr-grey-200);
+	top: -9.2rem;
+}
+
+.wlcBgImage {
+	background-image: url("../../../../assets/home/desktop/image-welcome.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.textContainer {
+	margin-top: 7.4rem;
+	margin-left: 19rem;
+}
+
+.wlcTitle {
+	font-size: var(--fs-700);
+	letter-spacing: -2px;
+	line-height: 64px;
+	color: var(--clr-blue-600);
+	width: 36rem;
+	margin-bottom: 4.6rem;
+}
+
+.wlcText {
+	width: 44.6rem;
+	color: var(--clr-grey-500);
+}
+
+.wlcText2 {
+	margin: 2.4rem 0;
+}

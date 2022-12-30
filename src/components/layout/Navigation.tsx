@@ -1,10 +1,9 @@
 import { NavLink } from "react-router-dom";
 import styles from "./navigation.module.scss";
-import Logo from "../assets/shared/desktop/logo.svg";
+import Logo from "../../assets/logo.svg";
 import { FaAlignJustify } from "react-icons/fa";
 import { useState } from "react";
 import { MdClose } from "react-icons/md";
-import HambIcon from "../assets/shared/mobile/menu.svg";
 
 const Navigation: React.FC = () => {
 	const [displayMenu, setDisplayMenu] = useState(false);
@@ -24,7 +23,7 @@ const Navigation: React.FC = () => {
 				</li>
 				<li>
 					<NavLink to="/about" end className={({ isActive }) => (isActive ? ` ${styles.active}    ${styles.link}` : `${styles.inactive}  ${styles.link}`)}>
-						About
+						About Us
 					</NavLink>
 				</li>
 				<li>
@@ -33,9 +32,8 @@ const Navigation: React.FC = () => {
 					</NavLink>
 				</li>
 			</div>
-			<button className={`${styles.btn_cta} btn`}>Schedule a Demo</button>
-			{/* <img src={HambIcon} alt="" className={styles.hamburger_menu} onClick={() => setDisplayMenu(!displayMenu)} /> */}
-			<div className={styles.hamburger_menu} onClick={() => setDisplayMenu(!displayMenu)}>
+
+			{/* <div className={styles.hamburger_menu} onClick={() => setDisplayMenu(!displayMenu)}>
 				{!displayMenu ? (
 					<>
 						<div className={styles.line_1}></div>
@@ -70,7 +68,7 @@ const Navigation: React.FC = () => {
 						<div className={styles.modal_line}></div>
 					</div>
 				</>
-			) : null}
+			) : null} */}
 		</nav>
 	);
 };

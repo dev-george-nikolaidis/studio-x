@@ -1,4 +1,4 @@
-// @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Public+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;700&display=swap");
 
 html {
 	font-size: 62.5%;
@@ -6,22 +6,23 @@ html {
 
 :root {
 	/* Colors */
-	--clr-pink-400: #ba4270;
-	--clr-water-white-400: #fbfcfe;
-	--clr-san-blue-400: #36536b;
-	--clr-san-blue-300: #6c8294;
-	--clr-mirage-blue-400: #1b262f;
-	--clr-charm-pink-400: #da6d97;
+	--clr-blue-600: #1b1d23;
+	--clr-grey-500: #60636d;
+	--clr-grey-400: #7d828f;
+	--clr-grey-300: #c8ccd8;
+	--clr-grey-200: #eeeff4;
+	--clr-red-400: #df5656;
 
+	--fs-1000: 25rem;
 	// --fs-900: 20rem;
-	// --fs-800: 7.2rem;
+	--fs-800: 9.6rem;
 	// --fs-750: 5.6rem;
-	// --fs-700: 4.8rem;
+	--fs-700: 7.2rem;
 	// --fs-650: 3.2rem;
 	// --fs-620: 2.8rem;
-	// --fs-600: 2rem;
+	--fs-600: 3.2rem;
 	// --fs-500: 1.8rem;
-	// --fs-400: 1.6rem;
+	--fs-400: 1.8rem;
 	// --fs-300: 1.4rem;
 	// --fs-200: 1.2rem;
 	// --fs-100: 1.1rem;
@@ -29,8 +30,7 @@ html {
 	// --fs-200: 1.5rem;
 	--transition: all 0.5s ease-in-out;
 	--box-shadow-400: 0 3px 8px rgba(0, 0, 0, 0.1);
-	--ff-normal: "Public Sans", sans-serif;
-	// 'DM Serif Display',
+	--ff-normal: "League Spartan", sans-serif;
 	--clr-sub-header: #000;
 }
 
@@ -48,7 +48,7 @@ body {
 	font-size: var(--fs-400);
 	min-height: 100vh;
 	text-rendering: optimizeSpeed;
-	line-height: 1.5;
+	line-height: 24px;
 }
 
 // This is for react root div element
@@ -140,6 +140,12 @@ select {
 	clip: react(0, 0, 0, 0);
 	white-space: nowrap;
 	border: 0;
+}
+
+.btn {
+	border: none;
+	cursor: pointer;
+	transition: var(--transition);
 }
 
 /*****************        Colors            **************************/

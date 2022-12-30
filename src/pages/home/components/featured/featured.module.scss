@@ -1,0 +1,83 @@
+.Featured {
+	grid-column: 2 / 14;
+	margin-top: 20rem;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.headerText {
+	font-size: var(--fs-700);
+	font-weight: 700;
+	letter-spacing: -2px;
+	line-height: 64px;
+}
+.btnWrapper {
+	width: 16.9rem;
+}
+
+.portfolioContainer {
+	margin-top: 6.4rem;
+	display: grid;
+	grid-template-columns: repeat(3, minmax(35rem, 1fr));
+	gap: 3rem;
+}
+
+.group {
+	background-repeat: no-repeat;
+	height: 56rem;
+	background-size: cover;
+	z-index: -1;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+.bgGroupModal {
+	position: absolute;
+	z-index: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba($color: #000000, $alpha: 0.4);
+	z-index: -1;
+}
+.group1 {
+	background-image: url("../../../../assets/portfolio/desktop/image-del-sol.jpg");
+}
+.group2 {
+	background-image: url("../../../../assets/portfolio/desktop/image-228b.jpg");
+}
+.group3 {
+	background-image: url("../../../../assets/portfolio/desktop/image-prototype.jpg");
+}
+
+.groupText {
+	font-size: var(--fs-1000);
+	line-height: 200px;
+	letter-spacing: -5px;
+	font-weight: 700;
+	margin-top: 4.5rem;
+	color: var(--clr-grey-300);
+	align-self: flex-end;
+}
+
+.groupContainer {
+	position: absolute;
+	bottom: 4rem;
+	left: 4rem;
+}
+.groupTitle {
+	font-size: var(--fs-600);
+	color: #fff;
+	line-height: 40px;
+	font-weight: 700;
+}
+
+.groupPara {
+	color: rgba($color: #fff, $alpha: 0.75);
+}
