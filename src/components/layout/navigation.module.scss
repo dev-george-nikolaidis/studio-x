@@ -45,6 +45,11 @@
 	display: none;
 }
 
+.active {
+	color: #000;
+	font-weight: 700;
+}
+
 // / 760px 1024px
 @media (max-width: 64em) {
 }

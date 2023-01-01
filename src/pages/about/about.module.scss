@@ -1,0 +1,94 @@
+.about {
+	display: grid;
+	grid-template-columns: [full-start] minmax(14rem, auto) [col-start] repeat(12, minmax(6.5rem, 12rem)) minmax(14rem, auto) [full-end];
+	grid-template-rows: max-content;
+	height: 100%;
+	grid-column-gap: 3rem;
+	position: relative;
+	padding-bottom: 50rem;
+}
+
+.labelWrapper {
+	position: absolute;
+	top: 18rem;
+	left: -5%;
+}
+
+.aboutHero {
+	grid-column: 2 / 14;
+	margin-top: 5.6rem;
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-columns: 63.5rem 1fr;
+	height: 72rem;
+	position: relative;
+}
+
+.heroTitle {
+	position: absolute;
+	font-size: var(--fs-1000);
+	line-height: 20rem;
+	letter-spacing: -5px;
+	color: var(--clr-grey-200);
+	font-weight: 700;
+	z-index: 1;
+	left: 46.5rem;
+	top: 13.5rem;
+}
+
+.imageContainer {
+	position: relative;
+}
+
+.bgModal {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 0;
+	background-color: rgba($color: #000000, $alpha: 0.4);
+}
+.bgImg {
+	background-image: url("../../assets/about/desktop/image-hero.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+}
+
+.shape {
+	position: absolute;
+	width: 15.3rem;
+	background-color: #fff;
+	right: 0;
+	bottom: 0;
+	height: 500px;
+	z-index: 0;
+	// background-color: rgba($color: #000000, $alpha: 0.4);
+}
+
+.textContainer {
+	position: relative;
+}
+.line {
+	width: 6.5rem;
+	height: 1px;
+	background-color: var(--clr-grey-300);
+	margin-bottom: 5.7rem;
+}
+.subContainer {
+	position: absolute;
+	bottom: 0;
+}
+.aboutTitle {
+	font-size: var(--fs-700);
+	line-height: 6.4rem;
+	letter-spacing: -2px;
+	font-weight: 700;
+	margin-bottom: 4.9rem;
+}

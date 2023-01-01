@@ -1,0 +1,38 @@
+.heritage {
+	grid-column: 2 / 14;
+	display: grid;
+	grid-template-columns: 1fr 54rem;
+	height: 56.8rem;
+	gap: auto;
+	margin-top: 20rem;
+	position: relative;
+}
+
+.line {
+	position: absolute;
+	top: 0;
+	width: 6.5rem;
+	height: 1px;
+	background-color: var(--clr-grey-300);
+}
+.textContainer {
+	width: 44.6rem;
+}
+
+.title {
+	font-size: var(--fs-700);
+	line-height: 6.4rem;
+	font-weight: 700;
+	letter-spacing: -2px;
+	margin: 14rem 0 5.1rem 0;
+}
+
+.paragraph2 {
+	margin: 2.4rem 0;
+}
+
+.imgContainer {
+	background-image: url("../../../assets/about/desktop/image-heritage.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
