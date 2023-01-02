@@ -61,3 +61,27 @@ export const galleryPortfolio = [
     }
  
 ]
+
+export const LeadersData = [
+    {
+        name:"Jackson Rourke",
+        position:"Lead Designer",
+        imgName:"avatar-jackson.jpg"
+    },
+    {
+        name:"Jake Richards",
+        position:"Chief Architect",
+        imgName:"avatar-jake.jpg"
+    },
+    {
+        name:"Maria Simpson",
+        position:"Senior Architect",
+        imgName:"avatar-maria.jpg"
+    },
+    {
+        name:"Thompson Smith",
+        position:"Head of Finance",
+        imgName:"avatar-thompson.jpg"
+    }
+  
+]

@@ -1,10 +1,9 @@
-.about {
+.contact {
 	display: grid;
 	grid-template-columns: [full-start] minmax(14rem, auto) [col-start] repeat(12, minmax(6.5rem, 12rem)) minmax(14rem, auto) [full-end];
 	grid-template-rows: max-content;
 	height: 100%;
 	grid-column-gap: 3rem;
-	position: relative;
 }
 
 .labelWrapper {
@@ -31,7 +30,7 @@
 	color: var(--clr-grey-200);
 	font-weight: 700;
 	z-index: 1;
-	left: 46.5rem;
+	left: 28rem;
 	top: 13.5rem;
 }
 
@@ -49,7 +48,7 @@
 	background-color: rgba($color: #000000, $alpha: 0.4);
 }
 .bgImg {
-	background-image: url("../../assets/about/desktop/image-hero.jpg");
+	background-image: url("../../assets/contact/desktop/image-hero.jpg");
 	background-repeat: no-repeat;
 	background-size: 100%;
 	position: absolute;
@@ -90,4 +89,55 @@
 	letter-spacing: -2px;
 	font-weight: 700;
 	margin-bottom: 4.9rem;
+}
+
+.addressesContainer {
+	margin-top: 20rem;
+	grid-column: 2 / 14;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	height: 29rem;
+}
+
+.lineGroup1 {
+	width: 6.5rem;
+	height: 1px;
+	background-color: var(--clr-grey-300);
+}
+
+.group1Title {
+	margin-top: 7.2rem;
+	font-size: var(--fs-700);
+	line-height: 64px;
+	font-weight: 700;
+	letter-spacing: -2px;
+}
+
+.headline {
+	margin-top: 7.6rem;
+	margin-bottom: 1.4rem;
+	line-height: 35px;
+	font-weight: 700;
+	color: var(--clr-grey-500);
+}
+
+.viewMapContainer {
+	display: flex;
+	align-items: center;
+	margin-top: 5.4rem;
+	font-weight: 700;
+}
+
+.btnIcon {
+	margin-left: 2.4rem;
+}
+
+.bgMap {
+	margin-top: 20rem;
+	grid-column: 2 / 14;
+	background-image: url("../../assets/contact/desktop/image-map.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 46rem;
 }

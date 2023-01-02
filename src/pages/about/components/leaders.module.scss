@@ -1,0 +1,22 @@
+.leaders {
+	grid-column: 2 / 14;
+	margin-top: 20rem;
+	display: grid;
+
+	grid-template-columns: minmax(38rem, 1fr) 1fr;
+}
+
+.titleContainer {
+}
+.leaderTitle {
+	font-size: var(--fs-700);
+	line-height: 64px;
+	font-weight: 700;
+	width: 24rem;
+}
+
+.photosContainer {
+	display: grid;
+	gap: 6rem 3rem;
+	grid-template-columns: repeat(2, 1fr);
+}

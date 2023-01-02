@@ -1,7 +1,9 @@
+import Footer from "../../components/layout/Footer";
 import Label from "../../components/layout/Label";
 import Navigation from "../../components/layout/Navigation";
 import styles from "./about.module.scss";
 import Heritage from "./components/Heritage";
+import Leaders from "./components/Leaders";
 
 interface Props {}
 
@@ -32,6 +34,8 @@ const About: React.FC<Props> = ({}) => {
 				</div>
 			</div>
 			<Heritage />
+			<Leaders />
+			<Footer />
 		</section>
 	);
 };
