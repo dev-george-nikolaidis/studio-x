@@ -20,3 +20,17 @@
 	gap: 6rem 3rem;
 	grid-template-columns: repeat(2, 1fr);
 }
+
+@media (max-width: 64em) {
+	.leaders {
+		grid-column: 3 / 13;
+		margin-top: 20rem;
+		display: grid;
+
+		grid-template-columns: 1fr;
+	}
+
+	.leaderTitle {
+		margin-bottom: 5rem;
+	}
+}

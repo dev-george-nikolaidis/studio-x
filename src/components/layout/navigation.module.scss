@@ -52,6 +52,12 @@
 
 // / 760px 1024px
 @media (max-width: 64em) {
+	.navigation {
+		grid-column: 3 / 13;
+		z-index: 1;
+		margin-top: 6.4rem;
+		display: flex;
+	}
 }
 
 // 375 -480px

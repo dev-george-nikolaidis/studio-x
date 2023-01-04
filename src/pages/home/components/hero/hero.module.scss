@@ -3,6 +3,7 @@
 	margin-top: 6.3rem;
 	position: relative;
 	height: 72rem;
+	width: 100%;
 }
 
 .bgDefault {
@@ -74,4 +75,25 @@
 
 .btnWrapper {
 	width: 25.2rem;
+}
+
+@media (max-width: 64em) {
+	.hero {
+		grid-column: 3 / 13;
+	}
+	.heroButtonsContainer {
+		display: none;
+	}
+
+	.bgDefault {
+		width: 100%;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-image: url("../../../../assets/home/tablet/image-hero-paramour.jpg");
+	}
+
+	.textContainer {
+		margin: 18.6rem 0 0 5.8rem;
+		color: #fff;
+	}
 }

@@ -46,3 +46,28 @@
 .wlcText2 {
 	margin: 2.4rem 0;
 }
+
+@media (max-width: 64em) {
+	.wlcSection {
+		grid-column: 3 / 13;
+		grid-template-columns: 1fr;
+		height: 100%;
+		margin-top: 20rem;
+		position: relative;
+		margin-bottom: 20rem;
+	}
+	.wlcTitleOverlay {
+		font-size: var(--fs-1000-t);
+		letter-spacing: -3px;
+		top: -8rem;
+		left: 0rem;
+	}
+
+	.wlcBgImage {
+		display: none;
+	}
+	.textContainer {
+		margin-top: 7.4rem;
+		margin-left: 0rem;
+	}
+}

@@ -81,3 +81,31 @@
 .groupPara {
 	color: rgba($color: #fff, $alpha: 0.75);
 }
+
+@media (max-width: 64em) {
+	.Featured {
+		grid-column: 3 / 13;
+	}
+
+	.portfolioContainer {
+		margin-top: 6.4rem;
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 3rem;
+	}
+	.group {
+		height: 24rem;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.group1 {
+		background-image: url("../../../../assets/portfolio/mobile/image-del-sol.jpg");
+	}
+	.group2 {
+		background-image: url("../../../../assets/portfolio/tablet/image-228b.jpg");
+	}
+	.group3 {
+		background-image: url("../../../../assets/portfolio/tablet/image-prototype.jpg");
+	}
+}

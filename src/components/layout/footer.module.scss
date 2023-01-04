@@ -40,3 +40,41 @@
 	margin-left: auto;
 	transform: translateX(12rem);
 }
+
+@media (max-width: 64em) {
+	.footer {
+		grid-column: 1 / -1;
+		height: 12rem;
+		display: grid;
+		grid-auto-flow: row;
+		grid-template-columns: 1fr 1fr;
+		margin-top: 20rem;
+	}
+
+	.footerContainer {
+		height: 100%;
+
+		width: 12rem;
+	}
+
+	.logoWrapper {
+		// width: 1r/;
+	}
+
+	.link_container {
+		display: flex;
+		gap: 6rem;
+		margin-left: 4rem;
+		background-color: red;
+		width: 60%;
+	}
+
+	.link {
+	}
+
+	.btnWrapper {
+		width: 25.2rem;
+		margin-left: auto;
+		transform: translateX(6rem);
+	}
+}

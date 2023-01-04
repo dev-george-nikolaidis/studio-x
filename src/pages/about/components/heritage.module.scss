@@ -36,3 +36,15 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+
+@media (max-width: 64em) {
+	.heritage {
+		grid-column: 3 / 13;
+		grid-template-columns: 1fr;
+		height: 100%;
+	}
+
+	.imgContainer {
+		display: none;
+	}
+}

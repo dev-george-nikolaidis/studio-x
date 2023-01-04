@@ -91,3 +91,54 @@
 	font-weight: 700;
 	margin-bottom: 4.9rem;
 }
+
+@media (max-width: 64em) {
+	.about {
+		grid-template-columns: [full-start] minmax(4rem, auto) [col-start] repeat(12, minmax(4.8rem, 12rem)) minmax(4rem, auto) [full-end];
+		grid-column-gap: 1rem;
+	}
+
+	.aboutHero {
+		grid-column: 3 / 13;
+		grid-template-columns: 63.5rem 1fr;
+	}
+	.bgImg {
+		background-image: url("../../assets/about/tablet/image-hero.jpg");
+	}
+
+	.labelWrapper {
+		left: -18%;
+	}
+
+	.aboutHero {
+		grid-column: 3 / 13;
+		grid-auto-flow: column;
+		grid-template-columns: 1fr;
+	}
+
+	.shape {
+		background: none;
+	}
+	.textContainer {
+		position: absolute;
+		background-color: #fff;
+		width: 57rem;
+		height: 43rem;
+		z-index: 10;
+		bottom: 0rem;
+		left: 5.8rem;
+	}
+	.subContainer {
+		position: absolute;
+		bottom: 0;
+		margin-left: 5.9rem;
+	}
+
+	.heroTitle {
+		font-size: var(--fs-1000-t);
+		letter-spacing: -3px;
+		z-index: 15;
+		left: 19rem;
+		top: 20rem;
+	}
+}

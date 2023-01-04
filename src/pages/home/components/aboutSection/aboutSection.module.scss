@@ -52,3 +52,9 @@
 .btnWrapper {
 	width: 18.7rem;
 }
+
+@media (max-width: 64em) {
+	.textContainer {
+		margin: 16.7rem 0 0 5.8rem;
+	}
+}

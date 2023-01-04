@@ -3,11 +3,12 @@ import styles from "./buttonBlack.module.scss";
 
 interface Props {
 	text: string;
+	style?: string;
 }
 
-const ButtonBlack: React.FC<Props> = ({ text }) => {
+const ButtonBlack: React.FC<Props> = ({ text, style }) => {
 	return (
-		<button className={`${styles.btnHero} btn`}>
+		<button className={`${styles.btnHero} btn ${styles.style}`}>
 			<span className={styles.btnText}>{text}</span>
 			<MdEast className={styles.btnIcon} />
 		</button>

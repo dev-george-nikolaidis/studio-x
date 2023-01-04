@@ -12,3 +12,14 @@
 	top: 12.5rem;
 	left: -3%;
 }
+
+@media (max-width: 64em) {
+	.home {
+		grid-template-columns: [full-start] minmax(4rem, auto) [col-start] repeat(12, minmax(4.8rem, 12rem)) minmax(4rem, auto) [full-end];
+		grid-column-gap: 1rem;
+	}
+
+	.labelWrapper {
+		left: -10%;
+	}
+}

@@ -35,3 +35,9 @@
 .textTime {
 	color: rgba($color: #fff, $alpha: 0.75);
 }
+
+@media (max-width: 64em) {
+	.singleContainer {
+		height: 24rem;
+	}
+}
