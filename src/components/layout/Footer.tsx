@@ -17,8 +17,8 @@ const Footer: React.FC<Props> = ({}) => {
 				{/* links */}
 				<div className={styles.link_container}>
 					<li>
-						<NavLink to="/pricing" end className={({ isActive }) => (isActive ? ` ${styles.active}  ${styles.link}` : `${styles.inactive}  ${styles.link}`)}>
-							Pricing
+						<NavLink to="/portfolio" end className={({ isActive }) => (isActive ? ` ${styles.active}  ${styles.link}` : `${styles.inactive}  ${styles.link}`)}>
+							Portfolio
 						</NavLink>
 					</li>
 					<li>

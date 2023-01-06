@@ -58,3 +58,24 @@
 		margin: 16.7rem 0 0 5.8rem;
 	}
 }
+
+@media (max-width: 30em) {
+	.homeAbout {
+		grid-column: 1 / -1;
+	}
+	.textContainer {
+		margin: 18rem 0 0 3.2rem;
+	}
+
+	.homeAboutBgImage {
+		background-image: url("../../../../assets/home/mobile/image-small-team.jpg");
+	}
+
+	.homeAboutTitle {
+		font-size: var(--fs-800-s);
+		line-height: 52px;
+		letter-spacing: -1.71px;
+		width: 30rem;
+		margin-bottom: 2.7rem;
+	}
+}

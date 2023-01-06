@@ -40,3 +40,21 @@
 		height: 100%;
 	}
 }
+
+@media (max-width: 30em) {
+	.portfolio {
+		grid-template-columns: [full-start] minmax(1rem, auto) [col-start] repeat(12, minmax(2rem, 12rem)) minmax(1rem, auto) [full-end];
+		grid-column-gap: 1rem;
+	}
+	.labelWrapper {
+		display: none;
+	}
+	.portfolioContainer {
+		margin-top: 5.6rem;
+		grid-column: 2 / 14;
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 2.4rem;
+		height: 100%;
+	}
+}

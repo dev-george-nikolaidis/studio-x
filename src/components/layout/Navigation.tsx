@@ -33,7 +33,7 @@ const Navigation: React.FC = () => {
 				</li>
 			</div>
 
-			{/* <div className={styles.hamburger_menu} onClick={() => setDisplayMenu(!displayMenu)}>
+			<div className={styles.hamburger_menu} onClick={() => setDisplayMenu(!displayMenu)}>
 				{!displayMenu ? (
 					<>
 						<div className={styles.line_1}></div>
@@ -49,13 +49,13 @@ const Navigation: React.FC = () => {
 					<div className={styles.menu_modal}>
 						<ul className={styles.list_modal}>
 							<li>
-								<NavLink to="/pricing" end className={({ isActive }) => (isActive ? ` ${styles.active}  ${styles.link}` : `${styles.inactive}  ${styles.link}`)}>
-									Pricing
+								<NavLink to="/portfolio" end className={({ isActive }) => (isActive ? ` ${styles.active}  ${styles.link}` : `${styles.inactive}  ${styles.link}`)}>
+									Portfolio
 								</NavLink>
 							</li>
 							<li>
 								<NavLink to="/about" end className={({ isActive }) => (isActive ? ` ${styles.active}    ${styles.link}` : `${styles.inactive}  ${styles.link}`)}>
-									About
+									About Us
 								</NavLink>
 							</li>
 							<li>
@@ -65,10 +65,10 @@ const Navigation: React.FC = () => {
 							</li>
 						</ul>
 
-						<div className={styles.modal_line}></div>
+						{/* <div className={styles.modal_line}></div> */}
 					</div>
 				</>
-			) : null} */}
+			) : null}
 		</nav>
 	);
 };

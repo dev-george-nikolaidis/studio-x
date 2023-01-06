@@ -1,10 +1,5 @@
 .navigation {
 	grid-column: 2 / 14;
-	// height: 16.2rem;
-	// display: grid;
-	// grid-template-columns: [full-start] minmax(14rem, auto) [col-start] repeat(12, minmax(6.5rem, 12rem)) minmax(14rem, auto) [full-end];
-	// grid-template-rows: max-content;
-	// grid-column-gap: 3rem;
 	z-index: 1;
 	margin-top: 6.4rem;
 	display: flex;
@@ -62,6 +57,12 @@
 
 // 375 -480px
 @media (max-width: 30em) {
+	.navigation {
+		grid-column: 2 / 14;
+		z-index: 1;
+		margin-top: 3.2rem;
+		display: flex;
+	}
 	.link_container {
 		display: none;
 	}
@@ -98,18 +99,20 @@
 		position: absolute;
 		z-index: 5;
 		height: 25.6rem;
-		background-color: #36536b;
+		background-color: #eeeff4;
 		top: 10rem;
 		left: 0;
 		right: 0;
+		color: #000;
 	}
 
 	.list_modal {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		justify-content: center;
 		gap: 2rem 0;
-		margin-top: 3.2rem;
+		margin-top: 5rem;
 		// background-color: gainsboro;
 	}
 
@@ -132,7 +135,9 @@
 	}
 
 	.link {
-		color: #fff;
+		color: #1b1d23;
+		font-size: 3.2rem;
+		font-weight: 700;
 		transition: var(--transition);
 	}
 

@@ -103,9 +103,28 @@
 		background-image: url("../../../../assets/portfolio/mobile/image-del-sol.jpg");
 	}
 	.group2 {
-		background-image: url("../../../../assets/portfolio/tablet/image-228b.jpg");
+		background-image: url("../../../../assets/portfolio/mobile/image-228b.jpg");
 	}
 	.group3 {
-		background-image: url("../../../../assets/portfolio/tablet/image-prototype.jpg");
+		background-image: url("../../../../assets/portfolio/mobile/image-prototype.jpg");
+	}
+}
+
+@media (max-width: 30em) {
+	.Featured {
+		grid-column: 2 / 14;
+		position: relative;
+	}
+	.btnWrapper {
+		position: absolute;
+		bottom: -10rem;
+		width: 100%;
+	}
+
+	.groupText {
+		display: none;
+	}
+	.group {
+		width: 100%;
 	}
 }

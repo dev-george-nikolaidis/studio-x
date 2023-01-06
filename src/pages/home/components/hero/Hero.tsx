@@ -32,6 +32,7 @@ const Hero: React.FC = () => {
 			{backgroundImage}
 			{/* hero */}
 			<div className={styles.textContainer}>
+				<div className={styles.bgModal}></div>
 				<h2 className={styles.heroTitle}>Project Paramour</h2>
 				<p className={styles.heroText}>Project made for an art museum near Southwest London. Project Paramour is a statement of bold, modern architecture.</p>
 				<div className={styles.btnWrapper}>

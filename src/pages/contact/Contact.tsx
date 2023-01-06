@@ -81,7 +81,9 @@ const Contact: React.FC<Props> = ({}) => {
 				</div>
 				{/*  */}
 			</div>
-			<div className={styles.bgMap}></div>
+			<div className={styles.mapContainer}>
+				<div className={styles.bgMap}></div>
+			</div>
 			<Form />
 			<Footer />
 		</section>

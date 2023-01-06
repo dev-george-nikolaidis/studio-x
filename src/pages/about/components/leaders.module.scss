@@ -34,3 +34,24 @@
 		margin-bottom: 5rem;
 	}
 }
+
+@media (max-width: 30em) {
+	.leaders {
+		grid-column: 3 / 13;
+		margin-top: 20rem;
+		display: flex;
+
+		flex-direction: column;
+	}
+	.leaderTitle {
+		font-size: var(--fs-800-s);
+		line-height: 5.2rem;
+		width: 17rem;
+	}
+
+	.photosContainer {
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+	}
+}

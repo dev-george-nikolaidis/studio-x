@@ -97,3 +97,41 @@
 		color: #fff;
 	}
 }
+
+@media (max-width: 30em) {
+	.hero {
+		grid-column: full-start / full-end;
+		margin-top: 3.2rem;
+	}
+	.bgDefault {
+		background-image: url("../../../../assets/home/mobile/image-hero-paramour.jpg");
+	}
+	.textContainer {
+		margin: 11.6rem 0 0 3.2rem;
+		color: #fff;
+	}
+
+	.heroTitle {
+		font-size: var(--fs-800-s);
+
+		letter-spacing: -1.2px;
+		line-height: 48px;
+		width: 26rem;
+		font-weight: 700;
+	}
+
+	.heroText {
+		width: 30rem;
+		margin: 1rem 0 8rem 0;
+	}
+
+	.bgModal {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: -1;
+		background-color: rgba($color: #000000, $alpha: 0.35);
+	}
+}
