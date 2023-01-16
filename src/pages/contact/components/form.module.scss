@@ -60,3 +60,12 @@
 		margin-bottom: 6rem;
 	}
 }
+
+@media (max-width: 30em) {
+	.formTitle {
+		font-size: var(--fs-800-s);
+		line-height: 52px;
+		letter-spacing: -1.71px;
+		width: 19rem;
+	}
+}
